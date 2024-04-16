@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popup.css">
+    <title>Document</title>
+</head>
+<body>
+ 
+    <div class="design"></div>
+    <div class="popup">
+    <nav>
+        <div class="logo"></div>
+        <div class="logotext">Summarizer</div>
+    </nav>
+    <div class="menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="-5 -7 24 24"><path fill="currentColor" d="M1 0h5a1 1 0 1 1 0 2H1a1 1 0 1 1 0-2zm7 8h5a1 1 0 0 1 0 2H8a1 1 0 1 1 0-2zM1 4h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2z"/></svg>
+        <div class="menu_items" style="display:none">
+            <a href="popup2.html"><span>YouTube video transcript summary</span></a>
+            <a href="popup.html"><span>Text summary</span></a>
+        </div>
+     </div>
+    
+    <div class="summary_form_wrapper">
+    <form id="summaryform">
+        <span>Paste the text here</span>
+        <textarea name="text" id="giventext" rows="5" cols="35" spellcheck="false"></textarea>
+        <button type="submit" class="summ_btn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="currentColor" d="M1 7h18v2H1zm4 4h14v2H5z"/></svg>
+            &nbsp;Summarize</button>
+    </form>
+    <span class="summ_heading">Summary:</span>
+   <div class="showsummary"></div>
+   </div>
+    </div>
+   <script src="popup.js"></script>
+</body>
+
+</html>

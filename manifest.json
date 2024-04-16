@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Text Summarization Extension",
+    "version": "1.0",
+    "description": "A text summarization extension that summarizes web page content.",
+    "action": {
+      "default_icon":"./images/logo.png",
+      "default_popup": "popup.html",
+      "default_title": "Text Summarization Extension"
+    },
+    "permissions": ["activeTab", "tabs"]
+  }
+  

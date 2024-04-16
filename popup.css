@@ -1,0 +1,183 @@
+@font-face {
+    font-family: "Griffy";   
+    src: url("./font/Griffy-Regular.ttf") ;
+  
+  }
+
+html{
+width: 400px;
+height: 280px;
+padding: 0;
+overflow: hidden;
+}
+body{
+  margin: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.menu{
+    position: fixed;
+    right: 2rem;
+    top:1.5rem;
+}
+.menu_items{
+    position: absolute;
+    right: 0;
+    width: 12rem;
+    height: 3rem;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.menu_items a{
+    text-decoration: none;
+    color:black;
+}
+.menu_items span{
+    text-align: center;
+    border-radius: 5px;
+}   
+.menu_items a:hover{
+    background:#d3d3d3;
+}
+.popup{
+    margin: 1.5rem 1.5rem;
+}
+.logotext{
+    font-family: 'Griffy';
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+}
+nav{
+    display: flex;
+    align-items: center;
+    margin-bottom:1rem;
+}
+.logo{
+    background: url('images/logo.svg');
+    background-size: cover;
+    width:2.2rem;
+    height:2.12rem;
+    
+}
+.animation{
+    animation: rotate 0.5s linear(0 0%, 1 100%) infinite;
+}
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.summary_form_wrapper{
+    
+    height: 26rem;
+    overflow-y: auto;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background: white;
+}
+::-webkit-scrollbar-thumb{
+    background: black;
+}
+#giventext{
+width: 100%;
+resize: none;
+background: rgba(255, 255, 255, 0.573);
+border-radius: 5px;
+outline: none;
+border: 1px solid rgb(165, 163, 163);
+padding: 1rem;
+box-sizing: border-box;
+}
+#summaryform{
+height: 11rem;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+}
+.summ_btn{
+margin-top: 1rem;
+color:white;
+outline: none;
+border: none;
+ border-radius: 3px;
+ height: 2rem;
+ background-image: linear-gradient(to left,#FF7F0D,#FF246C);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ 
+ padding: 1rem;
+ cursor: pointer;
+}
+.design{
+    position: absolute;
+    background: url('./images/design.svg');
+    background-size: contain;
+    height: 35rem;
+    width: 25rem;
+    top: -3rem;
+    right: -4.5rem;
+    z-index: -200;
+   
+}
+.design2{
+    position: absolute;
+    background: url('./images/design2.svg');
+    background-size: contain;
+    height: 35rem;
+    width: 25rem;
+    top: -3rem;
+    right: -4.5rem;
+    z-index: -200;
+   
+}
+.summ_heading{
+    margin-top: 2rem;
+    font-weight: bold;
+    display: inline-block;
+}
+.showsummary{
+    margin-top: 1rem;
+    background: #ffffff6b;
+    width: 100%;
+    min-height: 9rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px #787878, -1px 0px 2px #bcbaba;
+    position: relative;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+.showsummary::before{
+    content: "";
+    background: url('./images/Quote\ Left.svg');
+    background-size: cover;
+    width: 1.5rem;
+    height: 2rem;
+    position: absolute;
+    top: -18px;
+    left:0;
+}
+.showsummary::after{
+    content: "";
+    background: url('./images/Quote\ Left.svg');
+    background-size: cover;
+    width: 1.5rem;
+    height: 2rem;
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    transform: rotate(180deg);
+}
